@@ -1,0 +1,146 @@
+.contenedor-comida{
+    flex-direction: row;
+    margin-top: 13vw;
+    margin-left: 70px;
+    display: grid;
+    width:100vw;
+    grid-template-columns:500px 700px;
+    row-gap: 5px;
+    column-gap: 0px;
+    margin-left:5vw;
+    height: 50px;
+}
+.titlecomida{
+    font-size: 3em;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    margin-left: -75px;
+    margin-top: 1vw;
+}
+.sorrentino{
+    width:400px;
+    height: 400px;
+    margin-top: -50px;
+}
+.calorias{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
+}
+.descripción{
+    font-family: 'Montserrat';
+}
+.footer-container{
+    display: flex;
+    flex-direction:row;
+    margin-top: 360px !important;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+.rojosimg{
+    height:320px;
+    width: 260px;
+    margin-top: -20px;
+    margin-left: 130px;
+}
+.titlesalmon{
+    font-family: 'Montserrat';
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 1vw;
+
+}
+.salmonimg{
+    margin-top: -30px;
+}
+.chocoimg{
+    height:400px;
+    width: 350px;
+    margin-top: -70px;
+
+}
+.btn-outline-dark{
+    font-family: 'Montserrat';
+    margin-top: 20px;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width: 700px){
+    .contenedor-comida{
+        flex-direction: column;
+        margin-top: 30vw;
+        margin-left: 70px;
+        display: flex;
+        width:100vw;
+        grid-template-columns:500px 700px;
+        row-gap: 5px;
+        column-gap: 0px;
+        margin-left:5vw;
+        height: 50px;
+    }
+    .titlecomida{
+        font-size: 2em;
+        font-family: 'Montserrat';
+        font-weight: 800;
+        width:60vw;
+        margin-top: 3vw;
+        margin-left: 0vw;
+        text-align: left;
+    }
+    .sorrentino{
+        width:250px;
+        height: 450px;
+        margin-top: 10px;
+        margin-left: -6%;
+    }
+    .calorias{
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 200;
+    }
+    .descripción{
+        font-family: 'Montserrat';
+        width:90vw;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction:row;
+        margin-top: 175% !important;
+        margin-left: 10px;
+        justify-content: space-around;
+    }
+    .rojosimg{
+        height:300px;
+        width: 200px;
+        margin-top: -60px;
+        margin-left: -10%;
+    }
+    .btn-success{
+        font-size: .8em;
+    }
+    .salmonimg{
+        height:210px;
+        width: 200px;
+        margin-top: -20px;
+        margin-left: -2%;
+    }
+    .titlesalmon{
+        width: 30%;
+        line-height: 45px;
+    }
+    .chocoimg{
+        height:290px;
+        width: 250px;
+        margin-top: 0px;
+        margin-left: -2%;
+    }
+    .btn-outline-dark{
+        font-family: 'Montserrat';
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    
+
+
+}

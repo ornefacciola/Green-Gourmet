@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green&Gourmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./pedidos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awesome.min.css"/>
+    <script defer src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo" src="./img/whitelogo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav navbar-nav ms-auto w-100 justify-content-end" id="mynavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./menu.html">MENÚ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pedido.html">TU PEDIDO</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+  </nav>
+  <div class="form">
+    <div id="error"></div>
+    <form action="/" method="GET">
+      <h2 class="wlc">HACÉ TU PEDIDO ONLINE</h2>
+      <h3 class="elegi">Elegí lo que querés llevar y envianos tu información</h3>
+      <p class="titleplace">NOMBRE Y APELLIDO: </p>
+      <input id="name" placeholder="Nerón Gómez" name="name" type="text"/>
+      <p class="titleplace">NÚMERO DE TELÉFONO: </p>
+      <input type="tel" placeholder="+54 9 11 2125 4589" name="tel">
+      <p class="titleplace">QUERÉS <STRONG>QUITARLE</STRONG> UN INGREDIENTE A TU PEDIDO? </p>
+      <input type="text" placeholder="Sin cebolla" name="text">
+      <div class="form1">
+        <p class="titleplace">ELEGÍ <strong>PLATO</strong> Y <strong>CANTIDAD</strong></p>
+        <select name="plato" required>
+          <option value=""disabled selected hidden>Elegí tu plato</option>
+          <option value="selectzanahoria">Licuado Zanahoria</option>
+          <option value="selectchia">Licuado Green Chia</option>
+          <option value="selectrojos">Licuado de Frutos Rojos</option>
+          <option value="selectmaracu">icuado Maracuyá</option>
+          <option value="selectcarrot">Carrot Cake</option>
+          <option value="selectcrumble">Crumble de Manzana</option>
+          <option value="selectnuez">Bocado de Nuez y Nutella</option>
+          <option value="selecttorta">Torta Puro Chocolate</option>
+          <option value="selectpoke">Salmon Poke Bowl</option>
+          <option value="selectveggie">Vegan Bowl</option>
+          <option value="selectsooren">Sorrentinos de Calabaza</option>
+          <option value="selectbrie">Brie Table</option>
+          <option value="selectpink">Pink salad</option>
+          <option value="select">Kale Caesar</option>
+          <option value="select">Chicken Salad</option>
+          <option value="select">The Great Steak</option>
+        </select>
+      </div>
+      <div class="contador">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <a class= "btn btn-success" type="submit">Enviar Pedido</a>
+      </div>
+    </form>
+  
+  
+  <script>
+
+    const plus =document.querySelector(".plus"),
+    minus =document.querySelector(".minus"),
+    num= document.querySelector(".num");
+
+    let a = 1;
+
+    plus.addEventListener("click", ()=>{
+      a++;
+      a = (a < 10) ? a : a;
+      num.innerText=a;
+      console.log(a);
+    });
+
+    minus.addEventListener("click", ()=>{
+      if(a > 1){
+        a--;
+        a = (a < 10) ? + a : a;
+        num.innerText=a;
+      }
+      
+    });
+
+  </script>
+  <script>
+    function myFunction() {
+      // Get the value of the input field with id="numb"
+      let x = document.getElementById("numb").value;
+      // If x is Not a Number or less than one or greater than 10
+      let text;
+      if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+      } else {
+        text = "Input OK";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
+</body>
+</html>
+

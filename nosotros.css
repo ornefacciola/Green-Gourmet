@@ -1,0 +1,186 @@
+:root {
+    --primary: #b1b1b1;
+    --green:#51af5b;
+}
+.infosucursales{
+    height:500px
+}
+.veni{
+    margin-top: 8vw;
+    margin-left: 2vw;
+    font-weight: 800;
+    color: var(--green);
+    font-size: 3em;
+}
+.localimg{
+    width:20vw;
+    margin-top: 20vw;
+}
+.boxsucursales{
+    display: grid;
+    width:100vw;
+    grid-template-columns:230px 230px 230px 230px;
+    background-color: var(--green);
+    row-gap: 5px;
+    column-gap: 25px;
+    justify-content: space-around;
+    height: 200px;
+}
+.box{
+    text-align: center;
+    height:300px;
+    background-color: var(--primary);
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+}
+.localimg{
+    margin-top: 0%;
+    height:190px;
+    width:200px;
+}
+.ciudad{
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 1vw;
+}
+.direccion{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-top:-15px;
+}
+.infonosotros{
+    margin-top:0vw;
+    text-align: right;
+}
+.us{
+    font-family: 'Montserrat';
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--green);
+    margin-top: -4vw;
+    margin-right: 2vw;
+}
+.textuli{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-right: 2vw;
+}
+.footerimg{
+    width:200px;
+}
+.footerbtn{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1em;
+}
+.footerbtn1{
+    margin-top: 15px;
+    color: #fff;
+    font-size:1em;
+}
+.footer-container{
+    background-color: #000;
+    margin-left: 0px;
+    height:50px;
+}
+.icon{
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:800px){
+    .infosucursales{
+        height:500px
+    }
+    .veni{
+        margin-top: 25vw;
+        margin-left: 2vw;
+        font-weight: 800;
+        color: var(--green);
+        font-size: 2.2em;
+        font-family: 'Montserrat';
+    }
+    .localimg{
+        width:20vw;
+        margin-top: 20vw;
+    }
+    .boxsucursales{
+        display: grid;
+        width:100vw;
+        grid-template-columns: 160px 160px;
+        background-color: var(--green);
+        row-gap: 5px;
+        column-gap: 10px;
+        justify-content: space-around;
+        height: 100px;
+    }
+    .box{
+        text-align: center;
+        height:250px;
+        background-color: var(--primary);
+        margin-top: 25px;
+        box-shadow: 10px 5px 5px black;
+    }
+    .localimg{
+        margin-top: 0%;
+        height:120px;
+        width:150px;
+    }
+    .ciudad{
+        font-family: 'Montserrat';
+        font-size: 1.7em;
+        font-weight: 700;
+        margin-top: 2vw;
+        line-height: 30px;
+    }
+    .direccion{
+        font-family: 'Montserrat';
+        font-size: 1em;
+        margin-top:-15px;
+    }
+    .infonosotros{
+        margin-top:55vw;
+        text-align: right;
+    }
+    .us{
+        font-family: 'Montserrat';
+        font-size: 2em;
+        font-weight: 800;
+        color: var(--green);
+        margin-top: -4vw;
+        margin-right: 2vw;
+    }
+    .textuli{
+        font-family: 'Montserrat';
+        font-size: 1.1em;
+        margin-right: 2vw;
+    }
+    .footer-container{
+        margin-top: 20vw;
+    }
+    .footerbtn{
+        margin-top: 15px;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        line-height: 8px;
+    }
+    .footerbtn1{
+        margin-top: -8px;
+        color: #fff;
+        font-size: 1em;
+    }
+    .footer-container{
+        background-color: #000;
+        margin-left: 0px;
+        height:300px;
+    }
+    .icon{
+        margin-top: 2px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    
+}
