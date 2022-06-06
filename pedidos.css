@@ -11,7 +11,7 @@
 }
 .form{
     width: 500px;
-    height:800px;
+    height:820px;
     background: rgba(0,0,0,0.8);
     border-radius: 14px;
     margin-top: 35vw;
@@ -108,7 +108,7 @@ input[type=text1] {
       margin-left: 2vw;
       color:#d5c9c9;
   }
-  .btn-success{
+  .button{
     border:none;
     cursor:pointer;
     width: 90%;
@@ -118,6 +118,11 @@ input[type=text1] {
     margin-left: 2vw;
     margin-top:3vw;
     font-weight: 800;
+    height:45px;
+    color:#fff;
+  }
+  .button:hover{
+      background-color: #105f18;
   }
 .b{
     text-decoration: none;
@@ -180,10 +185,10 @@ select[name=plato]{
 @media screen and (max-width: 700px){
     .form{
         width: 300px;
-        height:620px;
+        height:700px;
         background: rgba(0,0,0,0.8);
         border-radius: 14px;
-        margin-top: 18vw;
+        margin-top: 50vw;
         justify-content: center;
     }
     
@@ -260,16 +265,21 @@ select[name=plato]{
           font-size: .8em;
           font-weight: 600;
       }
-      .btn-success{
+      .button{
         border:none;
         cursor:pointer;
         width: 90%;
         border-radius: 6px;
-        background-color: #4CC986;
+        background-color: var(--green);
         font-family: 'Montserrat';
-        margin-left: 4.8vw;
-        margin-top:5vw;
+        height: 45px;
+        color:#fff;
         font-weight: 800;
+        margin-top: 10vw;
+        margin-left: 4vw;
+      }
+      .button:hover{
+        background-color: #105f18;
       }
     .b{
         text-decoration: none;
@@ -288,6 +298,18 @@ select[name=plato]{
         justify-content: center;
         background:var(--green);
     }
+    input[type=tel] {
+        width: 90%;
+        height: 45px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+        font-weight:400;
+        font-size: 15px;
+        border-radius: 4px;
+        margin-left: 4vw;
+    }
     
     .contador{
         height:40px;
@@ -298,8 +320,8 @@ select[name=plato]{
         align-items: center;
         background: #fff;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-        margin-left: 3vw;
-        margin-top: 1vw;
+        margin-left: 4vw;
+        margin-top: 3vw;
     }
     .contador span{
         width:100px;

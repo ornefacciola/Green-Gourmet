@@ -91,7 +91,7 @@
     .sorrentino{
         width:250px;
         height: 450px;
-        margin-top: 10px;
+        margin-top: -20px;
         margin-left: -6%;
     }
     .calorias{
@@ -132,7 +132,7 @@
     .chocoimg{
         height:290px;
         width: 250px;
-        margin-top: 0px;
+        margin-top: -55px;
         margin-left: -2%;
     }
     .btn-outline-dark{
