@@ -182,13 +182,13 @@ select[name=plato]{
     margin-left: 2vw;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 896px){
     .form{
         width: 300px;
         height:700px;
         background: rgba(0,0,0,0.8);
         border-radius: 14px;
-        margin-top: 50vw;
+        margin-top: 300px;
         justify-content: center;
     }
     

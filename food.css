@@ -106,7 +106,7 @@
     .footer-container{
         display: flex;
         flex-direction:row;
-        margin-top: 175% !important;
+        margin-top: 190% !important;
         margin-left: 10px;
         justify-content: space-around;
     }
