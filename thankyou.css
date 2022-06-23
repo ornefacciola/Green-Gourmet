@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Anek+Odia:wght@100;300&family=Beau+Rivage&family=Bebas+Neue&family=Charis+SIL&family=Exo:wght@200;700&family=Lobster&family=Maven+Pro&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Raleway&family=Rubik:ital,wght@1,300&family=Shadows+Into+Light&family=Source+Serif+Pro:ital@1&family=Water+Brush&display=swap');
+
+.logo{
+    width: 260px;
+}
+.navbar{
+    background-color: #000;
+    width:100%;
+    position:fixed;
+}
+.navbar a{
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.navbar a:hover{
+    color: var(--primary);
+}
+.thankyou-container{
+    height: 600px;
+    width:100%;
+    background-color: #51af5b;
+    text-align: center;
+    margin-top: 0;
+}
+.gracias{
+    font-family: 'Montserrat';
+    font-size: 3.5em;
+    font-weight: 800;
+}
+.texto{
+    font-family: 'Montserrat';
+    font-size: 2em;
+    line-height: 23px;
+    font-weight: 400;
+}
+@media screen and (max-width: 456px){
+    .logo{
+        width: 200px;
+      }
+      .navbar-toggler{
+        border-color: #1b3921;
+        border-radius: 6px;
+        color:#1b3921;
+        background-color: #1b3921;
+      }
+      .gracias{
+        font-family: 'Montserrat';
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+    .texto{
+        font-family: 'Montserrat';
+        font-size: 1.1em;
+        line-height: 20px;
+        font-weight: 400;
+        width: 100%;
+    }
+}

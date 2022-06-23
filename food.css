@@ -1,9 +1,7 @@
 .contenedor-comida{
-    flex-direction: row;
     margin-top: 13vw;
     margin-left: 70px;
     display: grid;
-    width:100vw;
     grid-template-columns:500px 700px;
     row-gap: 5px;
     column-gap: 0px;
@@ -70,12 +68,8 @@
     .contenedor-comida{
         flex-direction: column;
         margin-top: 30vw;
-        margin-left: 70px;
         display: flex;
-        width:100vw;
-        grid-template-columns:500px 700px;
         row-gap: 5px;
-        column-gap: 0px;
         margin-left:5vw;
         height: 50px;
     }

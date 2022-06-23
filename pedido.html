@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green&Gourmet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./pedidos.css">
-    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awesome.min.css"/>
     <script defer src="./script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,48 +39,75 @@
           </div>
         </div>
   </nav>
-  <div class="form">
-    <div id="error"></div>
-    <form action="/" method="GET">
-      <h2 class="wlc">HACÉ TU PEDIDO ONLINE</h2>
-      <h3 class="elegi">Elegí lo que querés llevar y envianos tu información</h3>
-      <p class="titleplace">NOMBRE Y APELLIDO: </p>
-      <input id="name" placeholder="Nerón Gómez" name="name" type="text"/>
-      <p class="titleplace">NÚMERO DE TELÉFONO: </p>
-      <input type="tel" placeholder="+54 9 11 2125 4589" name="tel">
-      <p class="titleplace">QUERÉS <STRONG>QUITARLE</STRONG> UN INGREDIENTE A TU PEDIDO? </p>
-      <input type="text" placeholder="Sin cebolla" name="text">
-      <div class="form1">
-        <p class="titleplace">ELEGÍ <strong>PLATO</strong> Y <strong>CANTIDAD</strong></p>
-        <select name="plato" required>
-          <option value=""disabled selected hidden>Elegí tu plato</option>
-          <option value="selectzanahoria">Licuado Zanahoria</option>
-          <option value="selectchia">Licuado Green Chia</option>
-          <option value="selectrojos">Licuado de Frutos Rojos</option>
-          <option value="selectmaracu">Licuado Maracuyá</option>
-          <option value="selectcarrot">Carrot Cake</option>
-          <option value="selectcrumble">Crumble de Manzana</option>
-          <option value="selectnuez">Bocado de Nuez y Nutella</option>
-          <option value="selecttorta">Torta Puro Chocolate</option>
-          <option value="selectpoke">Salmon Poke Bowl</option>
-          <option value="selectveggie">Vegan Bowl</option>
-          <option value="selectsooren">Sorrentinos de Calabaza</option>
-          <option value="selectbrie">Brie Table</option>
-          <option value="selectpink">Pink salad</option>
-          <option value="select">Kale Caesar</option>
-          <option value="select">Chicken Salad</option>
-          <option value="select">The Great Steak</option>
-        </select>
-        <div class="contador">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
+  <div class="form-container">
+    <div class="form">
+      <div id="error"></div>
+      <form action="/" method="GET">
+        <h2 class="wlc">HACÉ TU PEDIDO ONLINE</h2>
+        <h3 class="elegi">Elegí lo que querés llevar y envianos tu información</h3>
+        <p class="titleplace">NOMBRE Y APELLIDO: </p>
+        <input id="name" placeholder="Jane Doe" name="name" type="text"/>
+        <div class="error_hint hidden">Ingrese un nombre válido por favor</div>
+        <p class="titleplace">NÚMERO DE TELÉFONO: </p>
+        <input type="tel" placeholder="+54 9 11 0000 0000" name="tel">
+        <div class="error_hint hidden">Ingrese un número válido por favor</div>
+        <p class="titleplace">QUERÉS <STRONG>QUITARLE</STRONG> UN INGREDIENTE A TU PEDIDO? </p>
+        <input type="text" placeholder="Ej: Sin ajo" name="text">
+        <div class="form1">
+          <p class="titleplace">ELEGÍ <strong>PLATO</strong> Y <strong>CANTIDAD</strong></p>
+          <select name="plato" required>
+            <option value=""disabled selected hidden>Elegí tu plato</option>
+            <option value="selectzanahoria">Licuado Zanahoria</option>
+            <option value="selectchia">Licuado Green Chia</option>
+            <option value="selectrojos">Licuado de Frutos Rojos</option>
+            <option value="selectmaracu">Licuado Maracuyá</option>
+            <option value="selectcarrot">Carrot Cake</option>
+            <option value="selectcrumble">Crumble de Manzana</option>
+            <option value="selectnuez">Bocado de Nuez y Nutella</option>
+            <option value="selecttorta">Torta Puro Chocolate</option>
+            <option value="selectpoke">Salmon Poke Bowl</option>
+            <option value="selectveggie">Vegan Bowl</option>
+            <option value="selectsooren">Sorrentinos de Calabaza</option>
+            <option value="selectbrie">Brie Table</option>
+            <option value="selectpink">Pink salad</option>
+            <option value="select">Kale Caesar</option>
+            <option value="select">Chicken Salad</option>
+            <option value="select">The Great Steak</option>
+          </select>
+          <div class="contador">
+            <span class="minus">-</span>
+            <span class="num">1</span>
+            <span class="plus">+</span>
+          </div>
+          <button class="button" type="submit">Enviar Pedido</button>
         </div>
-        <button class="button" type="submit">Enviar Pedido</button>
-      </div>
-    </form>
+      </form>
+
   </div>
   
+  </div>
+  <div class="footer-container">
+    <img class="footerimg" src="./img/logo.png">
+    <a class="footerbtn" href="./menu.html">MENÚ</a>
+    <a class="footerbtn" href="./pedido.html">PEDIDOS</a>
+    <a class="footerbtn" href="./nosotros.html">LOCALES</a>
+    <p class="footerbtn">BUENOS AIRES</p>
+    <p class="footerbtn1">+54 9 11 0000 0000</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/orrne.facciola/">
+        <img class="icon" id="facebook" src="./img/facebook.svg">
+      </a>
+      <a href="https://www.instagram.com/ornefacciola/">
+        <img class="icon" src="./img/instagram.svg">
+      </a>
+      <a href="https://github.com/ornefacciola">
+        <img class="icon" src="./img/github.svg">
+      </a>
+      <a href="https://www.linkedin.com/in/ornella-facciola-a43219216/">
+        <img class="icon" src="./img/linkedin.svg">
+      </a>
+    </div>
+  </div>
   
   <script>
 
@@ -108,20 +133,6 @@
       
     });
 
-  </script>
-  <script>
-    function myFunction() {
-      // Get the value of the input field with id="numb"
-      let x = document.getElementById("numb").value;
-      // If x is Not a Number or less than one or greater than 10
-      let text;
-      if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
-      } else {
-        text = "Input OK";
-      }
-      document.getElementById("demo").innerHTML = text;
-    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 
